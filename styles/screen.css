@@ -1,0 +1,119 @@
+@charset 'UTF-8';
+
+/* common */
+
+body {
+  font-family: "Koruri", sans-serif;
+  color: #333;
+}
+
+p {
+  line-height: 1.4;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 860px;
+}
+
+.container--small {
+  max-width: 480px;
+}
+
+/* header */
+
+header {
+  text-align: center;
+}
+
+#hero-image {
+  width: 100%;
+}
+
+header p {
+  font-size: 0.9em;
+}
+
+header nav {
+  padding: 0.8em;
+  background: #efefef;
+}
+
+header nav .container--small {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* main */
+
+main {
+  margin: 2.4em auto;
+}
+
+main p,
+main li {
+  line-height: 2;
+}
+
+main h1 {
+  position: relative;
+  text-align: center;
+  padding-bottom: 0.4em;
+  margin-bottom: 1.2em;
+}
+
+main h1:before {
+	position: absolute;
+	content: '';
+	background: #6ab04c;
+	left: calc(50% - 30px);
+	width: 60px;
+	height: 5px;
+  bottom: 0;
+}
+
+main h2 {
+  font-weight: 500;
+  font-size: 1.6em;
+  padding: 0.25em 0.5em;
+  border-left: solid 0.25em #6ab04c;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.avatar--profile {
+  float: right;
+  margin-right: 4em;
+  width: 240px;
+  height: 240px;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 2.4em;
+}
+
+/* for tablet */
+
+@media (max-width: 860px) {
+  .avatar--profile {
+    margin: 0;
+    float: initial;
+  }
+
+  .avatar--profile__wrapper {
+    text-align: center;
+  }
+}
