@@ -3,7 +3,7 @@
 /* common */
 
 body {
-  font-family: "Koruri", sans-serif;
+  font-family: ibm-plex-sans-jp, sans-serif;
   color: #333;
 }
 
@@ -80,7 +80,6 @@ main h1:before {
 }
 
 main h2 {
-  font-weight: 500;
   font-size: 1.6em;
   padding: 0.25em 0.5em;
   border-left: solid 0.25em #6ab04c;
